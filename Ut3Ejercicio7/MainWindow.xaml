@@ -74,7 +74,7 @@
                     <Label
                         DockPanel.Dock="Left"
                         Content="Edad" 
-                        Width="60"/>
+                        Width="60" />
 
                     <Image
                         DockPanel.Dock="Right"
