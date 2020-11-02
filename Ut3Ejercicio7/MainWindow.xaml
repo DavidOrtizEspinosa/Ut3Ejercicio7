@@ -44,15 +44,9 @@
             Margin="5"
             />
         <StackPanel MinWidth="350">
-        <Border
-            
-            Background="LightBlue"
-            >
-            <Border.Effect>
-                <DropShadowEffect />
-            </Border.Effect>
-
-            <StackPanel>
+            <Border Style="{StaticResource borderStyle}"
+                    Background="LightBlue">
+                <StackPanel>
                 <DockPanel
                     LastChildFill="True">
                     <Label
@@ -60,11 +54,8 @@
                         Content="Nombre"
                         Width="60" />
 
-                    <Image
-                        DockPanel.Dock="Right"
-                        Source="info.png"
-                        Height="20"
-                        HorizontalAlignment="Right" 
+                    <Image 
+                        Style="{StaticResource littleImageStyle}"
                         ToolTip="Máximo 100 caracteres"/>
                     <TextBox
                         Margin="5" />
@@ -77,10 +68,7 @@
                         Width="60" />
 
                     <Image
-                        DockPanel.Dock="Right"
-                        Source="info.png"
-                        Height="20"
-                        HorizontalAlignment="Right" 
+                        Style="{StaticResource littleImageStyle}"
                         ToolTip="Número entre 0 y 100"/>
                     <TextBox
                         Margin="5" />
@@ -91,11 +79,8 @@
                         Content="Dirección"
                         Width="60" />
                     
-                    <Image
-                        DockPanel.Dock="Right"
-                        Source="info.png"
-                        Height="20"
-                        HorizontalAlignment="Right" 
+                    <Image 
+                        Style="{StaticResource littleImageStyle}"
                         ToolTip="Incluir código postal"/>
                     <TextBox
                         Margin="5" />
@@ -103,18 +88,12 @@
             </StackPanel>
 
         </Border>
-        <Border
-            DockPanel.Dock="Top"
-            Background="LightYellow"
-            >
-            <Border.Effect>
-                <DropShadowEffect />
-            </Border.Effect>
-            <StackPanel
+            <Border Style="{StaticResource borderStyle}"
+                    DockPanel.Dock="Top"
+                    Background="LightYellow">
+                <StackPanel
                 Orientation="Horizontal">
-                <GroupBox Header="Aficiones"
-                          Margin="10"
-                          Width="200">
+                <GroupBox Header="Aficiones">
                     <StackPanel>
                         <CheckBox
                             Content="Hacer deporte" />
@@ -127,9 +106,7 @@
                     </StackPanel>
                 </GroupBox>
                 <GroupBox
-                    Header="Estado Civil"
-                    Margin="10"
-                    Width="200">
+                    Header="Estado Civil">
                     <StackPanel>
                         <RadioButton 
                             GroupName="es"

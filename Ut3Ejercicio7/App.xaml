@@ -4,36 +4,51 @@
              xmlns:local="clr-namespace:Ut3Ejercicio7"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style
-            TargetType="Button">
-            <Setter
-                Property="VerticalAlignment"
-                Value="Center" />
-            <Setter
-                Property="Margin"
-                Value="5" />
-            <Setter
-                Property="Height"
-                Value="25" />
-            <Setter
-                Property="Width"
-                Value="100" />
+        
+        <Style TargetType="GroupBox">
+            <Setter Property="Margin" 
+                    Value="10" />
+            <Setter Property="Width"
+                    Value="200" />
 
         </Style>
-        <Style
-            TargetType="Border">
-            <Setter
-                Property="Margin"
-                Value="10" />
-            <Setter
-                Property="BorderBrush"
-                Value="Black" />
-            <Setter
-                Property="BorderThickness"
-                Value="3" />
-            <Setter
-                Property="CornerRadius"
-                Value="5" />
+        <Style TargetType="Border"
+               x:Key="borderStyle">
+            <Setter Property="Margin"
+                    Value="10" />
+            <Setter Property="BorderBrush"
+                    Value="Black" />
+            <Setter Property="BorderThickness"
+                    Value="3" />
+            <Setter Property="CornerRadius"
+                    Value="5" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Image"
+               x:Key="littleImageStyle">
+            <Setter Property="DockPanel.Dock"
+                    Value="Right" />
+            <Setter Property="Source"
+                    Value="info.png" />
+            <Setter Property="Height"
+                    Value="20" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Right" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="Height"
+                    Value="25" />
+            <Setter Property="Width"
+                    Value="100" />
+
         </Style>
     </Application.Resources>
 </Application>
